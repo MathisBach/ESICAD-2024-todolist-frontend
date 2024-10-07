@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
 import TodoComponent from './components/TodoComponent.vue';
+import { Todo } from './models/Todo'; // Import de l'interface Todo
+
+
+
 const monTableau = ref([]);
 
 onMounted(async () => {
